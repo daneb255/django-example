@@ -1,1 +1,1 @@
-# django-example
+This is just a sample application written in Django. 
