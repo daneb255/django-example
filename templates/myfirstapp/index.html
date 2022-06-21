@@ -42,6 +42,39 @@
         {% endif %}
     </div>
 
+    <div>
+        {% if user_records %}
+        <table>
+            <thead>
+            <th>ID</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            </thead>
+
+        {% for urc in user_records %}
+            <tr>
+                <td>{{ urc.id }}</td>
+                <td>{{ urc.first_name }}</td>
+                <td>{{ urc.last_name }}</td>
+                <td>{{ urc.email }}</td>
+            </tr>
+        {% endfor %}
+
+        </table>
+        {% else %}
+            <p>No records found!</p>
+        {% endif %}
+    </div>
+
+    <div>
+        <h1>FORM</h1>
+        <form method="post">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 
 <footer>
