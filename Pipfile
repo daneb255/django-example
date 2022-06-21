@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 ipython = "==8.4.0"
 django-debug-toolbar = "==3.4.0"
+Faker = "==13.13.0"
 
 [packages]
 # django
