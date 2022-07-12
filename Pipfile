@@ -5,12 +5,12 @@ verify_ssl = true
 
 [dev-packages]
 ipython = "==8.4.0"
-django-debug-toolbar = "==3.4.0"
-Faker = "==13.13.0"
+django-debug-toolbar = "==3.5.0"
+Faker = "==13.15.0"
 
 [packages]
 # django
-Django = "==3.2.13"
+Django = "==3.2.14"
 
 [requires]
 python_version = "3.9"
