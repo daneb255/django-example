@@ -10,6 +10,13 @@
 </head>
 
 <body>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
     <h1>Hallo liebe Studenten!</h1>
 
     {{ test_variable }}
@@ -67,14 +74,6 @@
         {% endif %}
     </div>
 
-    <div>
-        <h1>FORM</h1>
-        <form method="post">
-            {{ form.as_p }}
-            {% csrf_token %}
-            <input type="submit" value="Submit">
-        </form>
-    </div>
 </body>
 
 <footer>
