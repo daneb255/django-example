@@ -1,4 +1,4 @@
-name: build
+name: trivy vuln scan
 on:
   push:
     branches:
